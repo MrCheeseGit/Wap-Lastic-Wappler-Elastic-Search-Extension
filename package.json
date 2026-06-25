@@ -1,0 +1,30 @@
+{
+  "name": "wappler-wap-lastic",
+  "version": "1.2.4",
+  "description": "Wappler Server Connect extension for weighted tokenised search with configurable columns and GET bindings",
+  "main": "waplastic.js",
+  "homepage": "https://www.mrcheese.co.uk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrCheeseGit/Wap-Lastic-Wappler-Elastic-Search-Extension.git"
+  },
+  "keywords": [
+    "wappler",
+    "server-connect",
+    "extension",
+    "search",
+    "mysql",
+    "full-text",
+    "elastic-search",
+    "relevance-ranking",
+    "relevance",
+    "weighted-search",
+    "mrcheese"
+  ],
+  "author": "Mr Cheese <https://www.mrcheese.co.uk>",
+  "license": "SEE LICENSE IN LICENSE",
+  "wappler": {
+    "module": "waplastic",
+    "version": "1.2.4"
+  }
+}

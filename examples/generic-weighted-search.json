@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "$_GET": [
+      { "type": "text", "name": "q" },
+      { "type": "text", "name": "limit" },
+      { "type": "text", "name": "offset" }
+    ]
+  },
+  "exec": {
+    "steps": [
+      {
+        "name": "productsQuery",
+        "module": "dbconnector",
+        "action": "select",
+        "options": {
+          "connection": "your_connection_name",
+          "sql": {
+            "type": "select",
+            "table": "products",
+            "columns": ["id", "name", "description", "price", "priority", "active"],
+            "wheres": {
+              "condition": "AND",
+              "rules": [
+                {
+                  "id": "products.active",
+                  "field": "products.active",
+                  "type": "double",
+                  "operator": "equal",
+                  "value": 1,
+                  "data": { "column": "active" }
+                }
+              ]
+            }
+          }
+        },
+        "output": true,
+        "meta": [
+          { "type": "number", "name": "id" },
+          { "type": "text", "name": "name" },
+          { "type": "text", "name": "description" },
+          { "type": "number", "name": "price" },
+          { "type": "number", "name": "priority" },
+          { "type": "number", "name": "active" }
+        ],
+        "outputType": "array"
+      },
+      {
+        "name": "searchResults",
+        "module": "waplastic",
+        "action": "weightedsearch",
+        "options": {
+          "mode": "query",
+          "sourceData": "{{productsQuery}}",
+          "searchTerms": "{{$_GET.q}}",
+          "searchColumns": [
+            { "field": "name", "weight": "100", "excludeWhenMatchIn": "" },
+            { "field": "description", "weight": "50", "excludeWhenMatchIn": "" }
+          ],
+          "outputColumns": [
+            { "field": "id", "type": "number" },
+            { "field": "name", "type": "text" },
+            { "field": "description", "type": "text" },
+            { "field": "price", "type": "number" },
+            { "field": "priority", "type": "number" }
+          ],
+          "responseFormat": "array",
+          "boostColumn": "priority",
+          "boostMultiplier": 50,
+          "limit": "{{$_GET.limit || 12}}",
+          "offset": "{{$_GET.offset || 0}}",
+          "sortMode": "relevance",
+          "includeCount": true,
+          "hideZeroScoreWhenSearching": true,
+          "minKeywordLength": 3,
+          "maxKeywords": 10
+        },
+        "output": true,
+        "outputType": "array"
+      }
+    ]
+  }
+}

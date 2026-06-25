@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "wap-lastic",
+  "name": "Wap-Lastic",
+  "version": "1.2.4",
+  "cloneDir": "Wap-Lastic-Wappler-Elastic-Search-Extension",
+  "hasServerConnect": true,
+  "hasAppConnect": false,
+  "readme": "https://github.com/MrCheeseGit/Wap-Lastic-Wappler-Elastic-Search-Extension#installation",
+  "serverConnect": {
+    "directories": [
+      "extensions/server_connect/modules",
+      "lib/modules"
+    ],
+    "copy": [
+      {
+        "src": "waplastic.hjson",
+        "dest": "extensions/server_connect/modules/waplastic.hjson"
+      },
+      {
+        "src": "waplastic.js",
+        "dest": "lib/modules/waplastic.js"
+      }
+    ],
+    "notes": [
+      "Quit Wappler completely and restart."
+    ]
+  }
+}
