@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.2.4
+## 1.2.5
 
 Current release of **Wap-Lastic**. See [README](README.md) for features, installation, and usage.
 
