@@ -7,7 +7,7 @@ Think of it as **elastic-style search for Wappler** (tokenised keywords, per-fie
 
 [![License: Mr Cheese Extension v1.0](https://img.shields.io/badge/License-Mr%20Cheese%20Extension%20v1.0-blue.svg)](https://www.mrcheese.co.uk/extension-license)
 ![Wappler](https://img.shields.io/badge/Wappler-Server%20Connect-teal)
-![Version](https://img.shields.io/badge/version-1%2E2%2E8-green)
+![Version](https://img.shields.io/badge/version-1%2E2%2E9-green)
 
 Built by **[Mr Cheese](https://www.mrcheese.co.uk)** · Wappler extensions & custom modules
 
@@ -54,14 +54,12 @@ No project-specific tables or connections are baked in. Configure everything in 
 
 ## Installation
 
-Pick **one** install path and follow it completely:
+| Path | |
+|------|--|
+| **npm** | Wappler Project Settings → Extensions (`wappler-wap-lastic`) |
+| **Git** | [Extension Installer](https://www.mrcheese.co.uk/extensions/install) or manual copy below |
 
-| Path | Best for |
-|------|----------|
-| **Git** (recommended) | Most reliable; uses `git clone` + copy from the repo |
-| **npm** | You already use Wappler Project Settings → Extensions |
-
-Both paths copy files into `extensions/` and `lib/modules/`. The npm path also requires verifying `node_modules/wappler-wap-lastic` exists **before** you run any copy commands.
+Git manual copy installs into `extensions/` and `lib/modules/`.
 
 ### Git install — Extension Installer (recommended)
 
