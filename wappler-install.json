@@ -14,11 +14,11 @@
     ],
     "copy": [
       {
-        "src": "waplastic.hjson",
+        "src": "server_connect/modules/waplastic.hjson",
         "dest": "extensions/server_connect/modules/waplastic.hjson"
       },
       {
-        "src": "waplastic.js",
+        "src": "server_connect/modules/waplastic.js",
         "dest": "lib/modules/waplastic.js"
       }
     ],

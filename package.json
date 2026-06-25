@@ -1,8 +1,8 @@
 {
   "name": "wappler-wap-lastic",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Wappler Server Connect extension for weighted tokenised search with configurable columns and GET bindings",
-  "main": "waplastic.js",
+  "main": "server_connect/modules/waplastic.js",
   "homepage": "https://www.mrcheese.co.uk",
   "repository": {
     "type": "git",
@@ -26,6 +26,6 @@
   "license": "SEE LICENSE IN LICENSE",
   "wappler": {
     "module": "waplastic",
-    "version": "1.2.6"
+    "version": "1.2.7"
   }
 }

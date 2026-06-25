@@ -88,8 +88,8 @@ Run from your **Wappler project root** (the folder that contains `package.json`)
 ```bash
 git clone https://github.com/MrCheeseGit/Wap-Lastic-Wappler-Elastic-Search-Extension.git ../Wap-Lastic-Wappler-Elastic-Search-Extension
 
-cp ../Wap-Lastic-Wappler-Elastic-Search-Extension/waplastic.hjson extensions/server_connect/modules/
-cp ../Wap-Lastic-Wappler-Elastic-Search-Extension/waplastic.js lib/modules/
+cp ../Wap-Lastic-Wappler-Elastic-Search-Extension/server_connect/modules/waplastic.hjson extensions/server_connect/modules/
+cp ../Wap-Lastic-Wappler-Elastic-Search-Extension/server_connect/modules/waplastic.js lib/modules/
 ```
 
 **Quit Wappler completely and restart** after installing or updating.
