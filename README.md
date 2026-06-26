@@ -54,6 +54,8 @@ No project-specific tables or connections are baked in. Configure everything in 
 
 ## Installation
 
+Official Wappler guide: [How To Install Custom Wappler Extensions](https://docs.wappler.io/t/how-to-install-custom-wappler-extensions/49982/).
+
 | Path | |
 |------|--|
 | **npm** | Wappler Project Settings → Extensions (`wappler-wap-lastic`) |
