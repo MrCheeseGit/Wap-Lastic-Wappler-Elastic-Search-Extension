@@ -7,7 +7,7 @@ Think of it as **elastic-style search for Wappler** (tokenised keywords, per-fie
 
 [![License: Mr Cheese Extension v1.0](https://img.shields.io/badge/License-Mr%20Cheese%20Extension%20v1.0-blue.svg)](https://www.mrcheese.co.uk/extension-license)
 ![Wappler](https://img.shields.io/badge/Wappler-Server%20Connect-teal)
-![Version](https://img.shields.io/badge/version-1%2E2%2E9-green)
+![Version](https://img.shields.io/badge/version-1%2E2%2E10-green)
 
 Built by **[Mr Cheese](https://www.mrcheese.co.uk)** · Wappler extensions & custom modules
 
